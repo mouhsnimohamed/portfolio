@@ -1,0 +1,10 @@
+content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 90%;
+    background-image: radial-gradient(ellipse closest-side, rgba(15, 14, 22, 0.5), #100e17), url(https://res.cloudinary.com/css-tricks/image/fetch/w_1200,q_auto,f_auto/http…ricks.com/wp-content/uploads/2019/11/react-hooks-testinglibrary-enzyme.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
