@@ -1,18 +1,18 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
+import Intro from "../components/Home/Intro"
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
-  console.log("POSTS ", posts)
+  // const posts = data.allMarkdownRemark.edges
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="flex flex-wrap -mx-4">
-        {posts.map(({ node }) => {
+      <Intro />
+      {/*<div className="flex flex-wrap -mx-4">
+         {posts.map(({ node }) => {
           return (
             <div
               key={node.frontmatter.path}
@@ -35,13 +35,12 @@ const IndexPage = ({ data }) => {
               </div>
             </div>
           )
-        })}
-      </div>
+        })} 
+      </div> */}
 
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
-      </div>
-      <Link to="/page-2/">Go to page 2</Link>
+      </div> */}
     </Layout>
   )
 }

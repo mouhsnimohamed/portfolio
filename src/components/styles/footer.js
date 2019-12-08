@@ -49,3 +49,11 @@ export const MailMe = styled.a`
   color: rgb(255, 255, 255);
   margin-bottom: 50px;
 `
+
+export const Copyright = styled.p`
+  [class^="icon-"] {
+    color: red;
+    margin-left: 10px;
+    font-size: 22px;
+  }
+`

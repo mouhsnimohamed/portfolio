@@ -6,6 +6,7 @@ import {
   SocialItem,
   GetInTouch,
   MailMe,
+  Copyright,
 } from "./styles/footer"
 
 export default function Footer() {
@@ -30,10 +31,10 @@ export default function Footer() {
       </SocialLinks>
       <GetInTouch>Get in touch</GetInTouch>
       <MailMe href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</MailMe>
-      <p>
+      <Copyright>
         Copyright &copy;{new Date().getFullYear()} All rights reserved | made
         with <i className="icon-heart" aria-hidden="true"></i>
-      </p>
+      </Copyright>
     </FooterContainer>
   )
 }

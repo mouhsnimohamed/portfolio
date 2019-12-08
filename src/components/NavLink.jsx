@@ -16,7 +16,6 @@ const NavLink = ({ text, to }) => {
 NavLink.propTypes = {
   text: PropTypes.string,
   to: PropTypes.string,
-  mouseOver: PropTypes.func,
 }
 
 NavLink.defaultProps = {
@@ -39,7 +38,6 @@ const Wrapper = styled.li`
   margin-bottom: 0;
   display: flex;
   align-items: center;
-  height: 5rem;
 
   .active {
     color: ${({ theme }) => theme.colors.primary};
