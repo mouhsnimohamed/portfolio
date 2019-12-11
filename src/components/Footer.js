@@ -1,34 +1,11 @@
 import React from "react"
-import {
-  FooterContainer,
-  SocialLinks,
-  SocialLink,
-  SocialItem,
-  GetInTouch,
-  MailMe,
-  Copyright,
-} from "./styles/footer"
+import { FooterContainer, GetInTouch, MailMe, Copyright } from "./styles/footer"
+import SocialMedia from "./SocialMedia"
 
 export default function Footer() {
   return (
     <FooterContainer>
-      <SocialLinks>
-        <SocialItem>
-          <SocialLink href="#">
-            <span className="icon-twitter"></span>
-          </SocialLink>
-        </SocialItem>
-        <SocialItem>
-          <SocialLink href="#">
-            <span className="icon-facebook"></span>
-          </SocialLink>
-        </SocialItem>
-        <SocialItem>
-          <SocialLink href="#">
-            <span className="icon-instagram"></span>
-          </SocialLink>
-        </SocialItem>
-      </SocialLinks>
+      <SocialMedia />
       <GetInTouch>Get in touch</GetInTouch>
       <MailMe href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</MailMe>
       <Copyright>

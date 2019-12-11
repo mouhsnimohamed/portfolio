@@ -7,33 +7,6 @@ export const FooterContainer = styled.footer`
   padding: 8em 0;
 `
 
-export const SocialLinks = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-`
-export const SocialItem = styled.div`
-  margin: 0 5px;
-`
-export const SocialLink = styled.a`
-  height: 60px;
-  width: 60px;
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  [class^="icon-"] {
-    font-size: 26px;
-  }
-
-  &:hover {
-    color: white;
-  }
-`
-
 export const GetInTouch = styled.h2`
   font-size: 2rem;
   font-weight: 700;

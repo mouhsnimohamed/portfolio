@@ -19,10 +19,11 @@ const Intro = () => (
 export default Intro
 
 const IntroContainer = styled.div`
+  margin-bottom: 8em;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 550px;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 200px);
   text-align: center;
 `

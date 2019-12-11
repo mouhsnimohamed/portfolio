@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Intro from "../components/Home/Intro"
+import AboutMe from "../components/about/about"
 
 const IndexPage = ({ data }) => {
   // const posts = data.allMarkdownRemark.edges
@@ -11,6 +12,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Intro />
+      <AboutMe />
       {/*<div className="flex flex-wrap -mx-4">
          {posts.map(({ node }) => {
           return (

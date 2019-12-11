@@ -6,7 +6,7 @@ const defaultVariants = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", /*stiffness: 20,*/ damping: 50 },
+    transition: { type: "spring", mass: 0.6, damping: 50 },
   },
 }
 
@@ -15,7 +15,12 @@ export const variants2 = {
   visible: {
     opacity: 1,
     y: 0,
-    transition: { type: "spring", stiffness: 100, delay: 0.2, damping: 50 },
+    transition: {
+      type: "spring",
+      delay: 0.2,
+      mass: 0.6,
+      damping: 50,
+    },
   },
 }
 

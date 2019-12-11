@@ -36,6 +36,18 @@ export const LightTitle = styled.h2`
   letter-spacing: 10px;
 `
 
+export const StrokeTitle = styled.h2`
+  -webkit-text-stroke: 2px ${({ theme }) => theme.colors.white};
+  -moz-text-stroke: 2px ${({ theme }) => theme.colors.white};
+  -ms-text-stroke-width: 2px ${({ theme }) => theme.colors.white};
+  color: transparent;
+  font-size: 55px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+`
+
 export default function StyledThemeProvider({ children }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>
 }

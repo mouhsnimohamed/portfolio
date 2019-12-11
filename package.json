@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "avataaars": "^1.2.1",
     "babel-plugin-styled-components": "^1.10.6",
     "framer-motion": "^1.6.17",
     "gatsby": "^2.18.3",
