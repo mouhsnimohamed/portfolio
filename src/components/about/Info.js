@@ -19,7 +19,7 @@ const Info = () => (
       Email: <Link href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</Link>
     </p>
     <p>
-      Phone: <Link href="tel:+212-606196434">+212-606 196 434</Link>
+      Phone: <Link href="tel:+212606196434">+212 606 196 434</Link>
     </p>
   </AboutDescription>
 )
