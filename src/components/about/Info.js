@@ -5,13 +5,20 @@ import SocialMedia from "../SocialMedia"
 const Info = () => (
   <AboutDescription>
     <AboutLabel>About</AboutLabel>
-
     <Name>Hi! I'm Mohamed Mouhsni</Name>
     <Description>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an unknown printer took a galley of type and scrambled it to
-      make a type specimen book.
+      A self-taught WEB Developer and a CSS Designer, based in
+      Casablanca, Morocco.
+      <br />
+      <br />
+      Outside of work I like to work on full stack web applications with a
+      combination of React, Gatsby, NodeJS and backend services like Firebase
+      and Netlify. This allows me play around with new technology and gives me a
+      better understanding of the digital industry as a whole.
+      <br />
+      <br />
+      Ready to start working on your JAVASCRIPT and CSS jobs, If that sounds
+      like someone you’d like to collaborate with.
     </Description>
     <SocialMedia />
     <ContactMe>Contact me here!</ContactMe>

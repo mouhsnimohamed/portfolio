@@ -1,31 +1,18 @@
 import React from "react"
+import avatar from "../../images/avatar.svg"
 import styled from "styled-components"
-import Avatar from "avataaars"
 
 const MyAvatar = () => (
   <AvatarContainer>
-    <Avatar
-      avatarStyle="Transparent"
-      topType="ShortHairShortCurly"
-      accessoriesType="Prescription01"
-      hairColor="BrownDark"
-      facialHairType="BeardLight"
-      facialHairColor="Black"
-      clotheType="Hoodie"
-      clotheColor="Gray01"
-      eyeType="Default"
-      eyebrowType="Default"
-      mouthType="Default"
-      skinColor="Light"
-    />
+    <img src={avatar} alt="what do you thing about me!" />
   </AvatarContainer>
 )
 
 export default MyAvatar
 
 const AvatarContainer = styled.div`
-  width: 40%;
-  svg {
+  width: 36%;
+  img {
     display: block;
     width: 100%;
   }
