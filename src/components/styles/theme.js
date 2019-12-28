@@ -4,7 +4,7 @@ const colors = {
   white: "#ffffff",
   gray: "rgba(255, 255, 255, 0.6)",
   black: "#121212",
-  primary: "#2f89fc",
+  primary: "#1aa0cb",
 }
 
 const theme = {

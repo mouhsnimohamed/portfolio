@@ -1,21 +1,33 @@
 import React from "react"
 import styled from "styled-components"
 
-const SocialMedia = () => (
+const SocialMedia = ({ color = "light" }) => (
   <SocialLinks>
     <SocialItem>
-      <SocialLink href="#">
+      <SocialLink
+        color={color}
+        target="_blank"
+        href="https://twitter.com/MohamedMouhsni"
+      >
         <span className="icon-twitter"></span>
       </SocialLink>
     </SocialItem>
     <SocialItem>
-      <SocialLink href="#">
-        <span className="icon-facebook"></span>
+      <SocialLink
+        color={color}
+        target="_blank"
+        href="https://github.com/mouhsnimohamed"
+      >
+        <span className="icon-github"></span>
       </SocialLink>
     </SocialItem>
     <SocialItem>
-      <SocialLink href="#">
-        <span className="icon-instagram"></span>
+      <SocialLink
+        color={color}
+        target="_blank"
+        href="https://www.linkedin.com/in/mohamed-mouhsni/"
+      >
+        <span className="icon-linkedin2"></span>
       </SocialLink>
     </SocialItem>
   </SocialLinks>
@@ -34,7 +46,10 @@ const SocialItem = styled.div`
 const SocialLink = styled.a`
   height: 60px;
   width: 60px;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${props =>
+    props.color === "light"
+      ? "rgba(255, 255, 255, 0.5)"
+      : props.theme.colors.primary};
   text-decoration: none;
   background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
@@ -46,6 +61,7 @@ const SocialLink = styled.a`
   }
 
   &:hover {
-    color: white;
+    color: ${props =>
+      props.color === "light" ? props.theme.colors.primary : "white"};
   }
 `

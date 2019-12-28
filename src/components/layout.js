@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import "./layout.css"
-import "./fonts/icomoon.css"
+import "./fonts/icomoon/style.css"
 import Footer from "./Footer"
 import StyledThemeProvider, { MainContainer } from "./styles/theme"
 

@@ -7,8 +7,8 @@ const Info = () => (
     <AboutLabel>About</AboutLabel>
     <Name>Hi! I'm Mohamed Mouhsni</Name>
     <Description>
-      A self-taught WEB Developer and a CSS Designer, based in
-      Casablanca, Morocco.
+      A self-taught WEB Developer and a CSS Designer, based in Casablanca,
+      Morocco.
       <br />
       <br />
       Outside of work I like to work on full stack web applications with a
@@ -20,7 +20,7 @@ const Info = () => (
       Ready to start working on your JAVASCRIPT and CSS jobs, If that sounds
       like someone you’d like to collaborate with.
     </Description>
-    <SocialMedia />
+    <SocialMedia color="primary" />
     <ContactMe>Contact me here!</ContactMe>
     <p>
       Email: <Link href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</Link>
