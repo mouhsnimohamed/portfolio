@@ -3,19 +3,53 @@ import styled, { ThemeProvider } from "styled-components"
 const colors = {
   white: "#ffffff",
   gray: "rgba(255, 255, 255, 0.6)",
-  black: "#121212",
+  // dark: "#121212",
+  dark: "#0a192f",
   primary: "#1aa0cb",
+  text: "#8c8c8c",
 }
 
 const theme = {
   colors,
 }
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.main`
   width: 100%;
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+`
+export const LayoutContainer = styled.div`
+  background: ${({ theme }) => theme.colors.dark};
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.text};
+  margin: 0;
+
+  &:after {
+    position: fixed;
+    top: -150px;
+    right: -50px;
+    bottom: 0;
+    content: "";
+    width: 400px;
+    height: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transform: rotate(-30deg);
+  }
+  &:before {
+    position: fixed;
+    top: 500px;
+    left: -100px;
+    bottom: 0;
+    content: "";
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transform: rotate(20deg);
+  }
 `
 export const GrayTitle = styled.h3`
   color: ${({ theme }) => theme.colors.gray};

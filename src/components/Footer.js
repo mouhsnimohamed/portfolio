@@ -10,7 +10,10 @@ export default function Footer() {
       <MailMe href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</MailMe>
       <Copyright>
         Copyright &copy;{new Date().getFullYear()} All rights reserved | made
-        with <i className="icon-heart" aria-hidden="true"></i>
+        with <i className="icon-heart" aria-hidden="true"></i> by Mohamed
+        MOUHSNI
+        <br />
+        Inspired by <a href="https://colorlib.com/">Colorlib</a>
       </Copyright>
     </FooterContainer>
   )

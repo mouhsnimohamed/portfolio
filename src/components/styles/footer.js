@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const FooterContainer = styled.footer`
   text-align: center;
   font-size: 16px;
-  background: ${({ theme }) => theme.colors.black};
+  background: ${({ theme }) => theme.colors.dark};
   padding: 8em 0;
 `
 
@@ -28,5 +28,10 @@ export const Copyright = styled.p`
     color: red;
     margin-left: 10px;
     font-size: 22px;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${props => props.theme.colors.gray};
   }
 `

@@ -33,10 +33,9 @@ const AvatarContainer = styled.div`
     height: 100%;
     border-radius: 3px;
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-
     top: 20px;
     left: -20px;
-    z-index: -1;
+
     border-width: 2px;
     border-style: solid;
     border-color: ${({ theme }) => theme.colors.primary};

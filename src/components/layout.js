@@ -5,7 +5,10 @@ import Header from "./Header"
 import "./layout.css"
 import "./fonts/icomoon/style.css"
 import Footer from "./Footer"
-import StyledThemeProvider, { MainContainer } from "./styles/theme"
+import StyledThemeProvider, {
+  MainContainer,
+  LayoutContainer,
+} from "./styles/theme"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,13 +23,11 @@ const Layout = ({ children }) => {
 
   return (
     <StyledThemeProvider>
-      <>
+      <LayoutContainer>
         <Header />
-        <main>
-          <MainContainer>{children}</MainContainer>
-        </main>
+        <MainContainer>{children}</MainContainer>
         <Footer />
-      </>
+      </LayoutContainer>
     </StyledThemeProvider>
   )
 }

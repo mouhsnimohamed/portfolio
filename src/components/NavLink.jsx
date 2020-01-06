@@ -30,6 +30,9 @@ const CustomLink = styled(Link)`
   line-height: 3rem;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.white};
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 `
 
 const Wrapper = styled.li`
