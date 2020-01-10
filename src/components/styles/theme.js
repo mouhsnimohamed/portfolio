@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from "styled-components"
 const colors = {
   white: "#ffffff",
   gray: "rgba(255, 255, 255, 0.6)",
-  // dark: "#121212",
+  transparent: "rgba(255, 255, 255, 0.1)",
   dark: "#0a192f",
   primary: "#1aa0cb",
   text: "#8c8c8c",
@@ -53,6 +53,7 @@ export const LayoutContainer = styled.div`
 `
 export const GrayTitle = styled.h3`
   color: ${({ theme }) => theme.colors.gray};
+  text-align: ${({ align }) => align || "left"};
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -63,11 +64,12 @@ export const GrayTitle = styled.h3`
 
 export const LightTitle = styled.h2`
   color: ${({ theme }) => theme.colors.white};
-  font-size: 55px;
+  text-align: ${({ align }) => align || "left"};
+  font-size: ${({ primary }) => (!primary ? "40px" : "55px")};
   line-height: 1.2;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 10px;
+  text-transform: ${({ primary }) => (!primary ? "none" : "uppercase")};
+  letter-spacing: ${({ primary }) => (!primary ? "2px" : "10px")};
 `
 
 export const StrokeTitle = styled.h2`

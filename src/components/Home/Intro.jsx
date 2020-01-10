@@ -7,10 +7,12 @@ const Intro = () => (
   <IntroContainer>
     <div>
       <FramerAnimator>
-        <GrayTitle>Hello! I'm</GrayTitle>
+        <GrayTitle align="center">Hello! I'm</GrayTitle>
       </FramerAnimator>
       <FramerAnimator variants={variants2}>
-        <LightTitle>Mohamed Mouhsni</LightTitle>
+        <LightTitle align="center" primary>
+          Mohamed Mouhsni
+        </LightTitle>
       </FramerAnimator>
     </div>
   </IntroContainer>
