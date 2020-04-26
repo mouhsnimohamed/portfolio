@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-const SocialMedia = ({ color = "light" }) => (
-  <SocialLinks>
+const SocialMedia = ({ color = "light", justifyContent = "center" }) => (
+  <SocialLinks justifyContent={justifyContent}>
     <SocialItem>
       <SocialLink
         color={color}
@@ -37,7 +37,7 @@ export default SocialMedia
 
 const SocialLinks = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: ${props => props.justifyContent};
   margin-bottom: 60px;
 `
 const SocialItem = styled.div`

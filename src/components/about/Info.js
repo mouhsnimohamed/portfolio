@@ -20,7 +20,7 @@ const Info = () => (
       Ready to start working on your JAVASCRIPT and CSS jobs, If that sounds
       like someone you’d like to collaborate with.
     </Description>
-    <SocialMedia color="primary" />
+    <SocialMedia color="primary" justifyContent="flex-start" />
     <ContactMe>Contact me here!</ContactMe>
     <p>
       Email: <Link href="mailto:m.mouhsni@gmail.com">m.mouhsni@gmail.com</Link>
