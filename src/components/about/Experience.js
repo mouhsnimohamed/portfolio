@@ -25,11 +25,11 @@ const Experience = () => {
       }
     }
   `)
-  console.log(data)
+
   return (
     <ExperienceWrapper>
       <FramerAnimator>
-        <GrayTitle>PORTFOLIO</GrayTitle>
+        <GrayTitle>EXPERIENCES</GrayTitle>
       </FramerAnimator>
       <FramerAnimator variants={variants2}>
         <LightTitle>Where I've Worked</LightTitle>
@@ -38,83 +38,146 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              Expet Front-End developer <span> - EUR AFRIC Information</span>
+              MERN Stack developer <span> - Self-employment</span>
             </h4>
             <Location>
-              Developed and shipped highly interactive web applications for BANK
-              OF AFRIKA using React, Redux, Redux Saga, MaterialUI.
-            </Location>
-            <Location>
-              Write modern, performant, maintainable code for a diverse array of
-              client and internal projects
+              I worked for so many clients as a freelancer,
+              <br /> below the details :
             </Location>
           </Desc>
           <Year>
             <p>2018 - Present</p>
           </Year>
+          <Child>
+            <ExperienceLine>
+              <Desc>
+                <h4>
+                  Expert Front End developer
+                  <span> - EURAFRIC Information</span>
+                </h4>
+                <Location>
+                  Develop a highly interactive web application for business
+                  credit for BANK OF AFRICA using React, Redux, Redux Saga,
+                  MaterialUI, react testing library and jest for testing
+                </Location>
+              </Desc>
+              <Year>
+                <p>Oct 2019 - Mar 2020</p>
+              </Year>
+            </ExperienceLine>
+          </Child>
+          <Child>
+            <ExperienceLine>
+              <Desc>
+                <h4>
+                  MERN Stack developer
+                  <span> - x-hub.io</span>
+                </h4>
+                <Location>
+                  Within the company xhub, I had the chance to work with the
+                  best developers in Morocco that I learned a lot from them on
+                  different technologies such as docker, spring boot, and
+                  agility
+                </Location>
+                <Location>
+                  Developed the twitter-Wall application (Front-end and
+                  back-end) which can display a list of tweets based on a
+                  configurable hashtag in the backoffice.
+                  <br />
+                  <a target="_blank" href="https://twitter-wall.dev.x-hub.io">
+                    <Highlighted>https://twitter-wall.dev.x-hub.io</Highlighted>
+                  </a>
+                </Location>
+                <Location>
+                  Develped and redesign the new site of Xhub using with
+                  Gatsbyjs.
+                  <br />
+                  <a target="_blank" href="https://x-hub.io">
+                    <Highlighted>https://x-hub.io/</Highlighted>
+                  </a>
+                </Location>
+                <Location>
+                  Collaboration with other front-end and back-end developers to
+                  develop a web application using the ReactJS and Redux JS
+                  framework for the <br />
+                  <Highlighted>BANK OF AFRICA</Highlighted>
+                </Location>
+                <Location>
+                  Cutting and integration of the GUI of the{" "}
+                  <Highlighted>GHUB</Highlighted> platform with Photoshop taking
+                  into account the responsive mode (mobile, tablet, desktop).
+                </Location>
+                <Location>
+                  Developed a desktop application using Electronjs and Reactjs
+                  for <br />
+                  <Highlighted>AG2Rlamondiale</Highlighted>
+                </Location>
+              </Desc>
+              <Year>
+                <p>Dec 2018 - Sep 2019</p>
+              </Year>
+            </ExperienceLine>
+          </Child>
         </ExperienceLine>
         <ExperienceLine>
           <Desc>
             <h4>
-              UX &amp; Interaction Designer <span> - Google Company</span>
+              Front end Developer <span> - Gentis Recruitment</span>
             </h4>
             <Location>
-              Collaborated with a small team of student designers to spearhead a
-              new brand and design system for Scout’s inaugural student-led
-              design conference at Northeastern
+              Collaborated with a team of 10 members including designers
+              develpers, manager and product owner to spearhead a new brand and
+              design a Smart Career Management Platform.
+              <br />
+              <Highlighted>hireme.io</Highlighted>
             </Location>
             <Location>
-              Work with a variety of different languages, platforms, frameworks,
-              and content management systems such as JavaScript, TypeScript,
-              Gatsby, React, Craft, Wordpress, Prismic, and Netlify
+              Work with a variety of different languages, frameworks, such as
+              JavaScript, React, GatsbyJS and NextJS.
+              <br />
+              <a target="_blank" href="https://hireme.io/">
+                <Highlighted>https://hireme.io/</Highlighted>
+              </a>
             </Location>
           </Desc>
           <Year>
-            <p>2017 - Present</p>
+            <p>Aug 2016 - Oct 2018</p>
           </Year>
         </ExperienceLine>
         <ExperienceLine>
           <Desc>
             <h4>
-              UX &amp; Interaction Designer <span> - Google Company</span>
+              Front end Developer <span> - Agence Oneo</span>
             </h4>
             <Location>
-              Worked closely with designers and management team to develop,
-              document, and manage the conference’s marketing website using
-              Jekyll, Sass, and JavaScript
+              Worked closely with designers and management team to develop and
+              maintain, an exitsing platform based on Drupaly CMS
+              <br />
+              <a target="_blank" href="https://www.flyer.be/befr">
+                <Highlighted>https://www.flyer.be/befr</Highlighted>
+              </a>
             </Location>
           </Desc>
           <Year>
-            <p>2017 - Present</p>
+            <p>Apr 2014 - Aug 2016</p>
           </Year>
         </ExperienceLine>
         <ExperienceLine>
           <Desc>
             <h4>
-              UX &amp; Interaction Designer <span> - Google Company</span>
-            </h4>
-            <Location>
-              Interfaced with user experience designers and other developers to
-              ensure thoughtful and coherent user experiences across Starry’s
-              iOS and Android mobile apps
-            </Location>
-          </Desc>
-          <Year>
-            <p>2017 - Present</p>
-          </Year>
-        </ExperienceLine>
-        <ExperienceLine>
-          <Desc>
-            <h4>
-              UX &amp; Interaction Designer <span> - Google Company</span>
+              Front end Designer <span> - VOID</span>
             </h4>
             <Location>
               Developed and maintained code for in-house and client websites
               primarily using HTML, CSS, Sass, JavaScript, and jQuery
+              <br />
+              <a target="_blank" href="https://www.void.fr">
+                <Highlighted>https://www.void.fr</Highlighted>
+              </a>
             </Location>
           </Desc>
           <Year>
-            <p>2017 - Present</p>
+            <p>Fev 2011 - Mar 2013</p>
           </Year>
         </ExperienceLine>
       </div>
@@ -133,6 +196,7 @@ const ExperienceLine = styled.div`
   padding: 1.2rem 0;
   margin-bottom: 1.5em;
   display: flex;
+  flex-wrap: wrap;
   border-bottom: 1px solid ${({ theme }) => theme.colors.transparent};
   &:first-child {
     padding-top: 3em;
@@ -143,7 +207,7 @@ const ExperienceLine = styled.div`
   }
 `
 const Desc = styled.div`
-  flex-grow: 1;
+  width: 70%;
   padding-right: 3em;
   h4 {
     margin-bottom: 1em;
@@ -160,10 +224,29 @@ const Desc = styled.div`
 `
 const Location = styled.p`
   line-height: 150%;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  margin-bottom: 1em;
+  a {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`
+const Highlighted = styled.code`
+  color: ${({ theme }) => theme.colors.primary};
 `
 
 const Year = styled.div`
   width: 30%;
   text-align: right;
+`
+
+const Child = styled.div`
+  padding-left: 25px;
+  h4 {
+    font-size: 110%;
+  }
+
+  ${ExperienceLine} {
+    padding: 0.8rem 0;
+    margin-bottom: 0;
+  }
 `

@@ -13,6 +13,7 @@ const AboutMe = () => (
 export default AboutMe
 
 const AboutContainer = styled.div`
+  margin-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

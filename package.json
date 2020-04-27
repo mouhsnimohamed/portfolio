@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "mohamed-mouhsni-personal-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Mohamed MouhsniA self-taught WEB Developer and a CSS Designer, based in Agadir, Morocco.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Mohamed Mouhsni <m.mouhsni@gmail.com>",
   "dependencies": {
     "@mdx-js/mdx": "^1.5.5",
     "@mdx-js/react": "^1.5.5",
@@ -30,7 +30,9 @@
     "prettier": "^1.19.1"
   },
   "keywords": [
-    "gatsby"
+    "portfolio",
+    "developer",
+    "Mohamed Mouhsni"
   ],
   "license": "MIT",
   "scripts": {
@@ -39,14 +41,13 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/mouhsnimohamed/portfolio"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/mouhsnimohamed/portfolio/issues"
   }
 }
