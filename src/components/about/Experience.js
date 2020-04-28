@@ -1,35 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
 import { FramerAnimator, variants2 } from "../../shared/Animations"
 import { GrayTitle, LightTitle } from "../styles/theme"
 
 const Experience = () => {
-  const data = useStaticQuery(graphql`
-    query ExperienceQuery {
-      allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { fileAbsolutePath: { regex: "/projects/" } }
-        limit: 1000
-      ) {
-        edges {
-          node {
-            frontmatter {
-              date(formatString: "MMMM DD, YYYY")
-              path
-              title
-              description
-            }
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <ExperienceWrapper>
       <FramerAnimator>
-        <GrayTitle>EXPERIENCES</GrayTitle>
+        <GrayTitle>EXPERIENCE</GrayTitle>
       </FramerAnimator>
       <FramerAnimator variants={variants2}>
         <LightTitle>Where I've Worked</LightTitle>

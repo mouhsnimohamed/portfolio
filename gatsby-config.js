@@ -19,13 +19,7 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `projects`,
-    //     path: `${__dirname}/src/content/projects`,
-    //   },
-    // },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -40,10 +34,10 @@ module.exports = {
         name: `mohamed-mouhsni-portofio`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1aa0cb`,
+        theme_color: `#1aa0cb`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.jpg`, // This path is relative to the root of the site.
       },
     },
   ],
