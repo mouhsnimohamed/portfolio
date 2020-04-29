@@ -2,6 +2,6 @@
 date: "2019-08-04"
 featuredImage: ../../images/credit-entreprise.png
 name: "Credit-entreprise"
-title: "Even the all-powerful Pointing has no control"
-description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text."
+title: "Business credit for BANK OF AFRICA"
+description: "Develop a highly interactive web application for business credit for BANK OF AFRICA using React, Redux, Redux Saga, MaterialUI, react testing library and jest for testing"
 ---

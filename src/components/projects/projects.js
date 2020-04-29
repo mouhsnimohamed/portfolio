@@ -35,6 +35,7 @@ const Projects = ({ limit = 100 }) => {
       }
     }
   `)
+
   return (
     <ProjectsWrapper>
       <FramerAnimator>
@@ -61,18 +62,4 @@ export default Projects
 
 const ProjectsWrapper = styled.div`
   padding: 8em 0;
-`
-const ProjectsLine = styled.div`
-  padding: 1.2rem 0;
-  margin-bottom: 1.5em;
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.transparent};
-  &:first-child {
-    padding-top: 3em;
-  }
-
-  &:last-child {
-    border-bottom: 0;
-  }
 `

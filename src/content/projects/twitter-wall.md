@@ -2,6 +2,6 @@
 date: "2019-08-04"
 featuredImage: ../../images/twitter-wall-2.jpg
 name: "twitter-wall"
-title: "Even the all-powerful Pointing has no control"
-description: "Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text."
+title: "Twitter Wall platform"
+description: "A wall of live Twitter updates. Capture the feeling of an event based on a hashtag configured in the backoffice. Twitter wall get people talking and help extend the event's reach."
 ---

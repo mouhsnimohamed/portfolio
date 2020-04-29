@@ -3,6 +3,11 @@ import styled from "styled-components"
 import Img from "gatsby-image"
 
 const ProjectItem = ({ title, description, image, isOdd }) => {
+  const formattedDescription = description
+    .split(`\n\n`)
+    .map(paragraph => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`)
+    .join(``)
+
   return (
     <Item isOdd={isOdd}>
       <Image>
@@ -10,7 +15,7 @@ const ProjectItem = ({ title, description, image, isOdd }) => {
       </Image>
       <Text>
         <Title>{title}</Title>
-        <Description>{description}</Description>
+        <div dangerouslySetInnerHTML={{ __html: formattedDescription }} />
       </Text>
     </Item>
   )
@@ -26,12 +31,17 @@ const Item = styled.div`
 `
 
 const Text = styled.div`
-  width: 50%;
+  width: 55%;
   padding: 5%;
 `
-const Title = styled.h2``
-const Description = styled.p``
+const Title = styled.h2`
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  line-height: 150%;
+`
+
 const Image = styled.div`
-  width: 50%;
-  padding: 0 3%;
+  width: 45%;
+  padding: 0 2%;
 `

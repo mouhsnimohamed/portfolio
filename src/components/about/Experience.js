@@ -62,7 +62,11 @@ const Experience = () => {
                   back-end) which can display a list of tweets based on a
                   configurable hashtag in the backoffice.
                   <br />
-                  <a target="_blank" href="https://twitter-wall.dev.x-hub.io">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://twitter-wall.dev.x-hub.io"
+                  >
                     <Highlighted>https://twitter-wall.dev.x-hub.io</Highlighted>
                   </a>
                 </Location>
@@ -70,7 +74,11 @@ const Experience = () => {
                   Develped and redesign the new site of Xhub using with
                   Gatsbyjs.
                   <br />
-                  <a target="_blank" href="https://x-hub.io">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://x-hub.io"
+                  >
                     <Highlighted>https://x-hub.io/</Highlighted>
                   </a>
                 </Location>
@@ -113,7 +121,11 @@ const Experience = () => {
               Work with a variety of different languages, frameworks, such as
               JavaScript, React, GatsbyJS and NextJS.
               <br />
-              <a target="_blank" href="https://hireme.io/">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://hireme.io/"
+              >
                 <Highlighted>https://hireme.io/</Highlighted>
               </a>
             </Location>
@@ -131,7 +143,11 @@ const Experience = () => {
               Worked closely with designers and management team to develop and
               maintain, an exitsing platform based on Drupaly CMS
               <br />
-              <a target="_blank" href="https://www.flyer.be/befr">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.flyer.be/befr"
+              >
                 <Highlighted>https://www.flyer.be/befr</Highlighted>
               </a>
             </Location>
@@ -149,7 +165,11 @@ const Experience = () => {
               Developed and maintained code for in-house and client websites
               primarily using HTML, CSS, Sass, JavaScript, and jQuery
               <br />
-              <a target="_blank" href="https://www.void.fr">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.void.fr"
+              >
                 <Highlighted>https://www.void.fr</Highlighted>
               </a>
             </Location>
