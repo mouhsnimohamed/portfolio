@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { FramerAnimator, variants2 } from "../../shared/Animations"
-import { GrayTitle, LightTitle } from "../styles/theme"
+import { GrayTitle, LightTitle, Highlighted } from "../styles/theme"
 
 const Experience = () => {
   return (
@@ -227,9 +227,6 @@ const Location = styled.p`
   a {
     color: ${({ theme }) => theme.colors.primary};
   }
-`
-const Highlighted = styled.code`
-  color: ${({ theme }) => theme.colors.primary};
 `
 
 const Year = styled.div`

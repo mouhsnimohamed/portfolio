@@ -1,8 +1,8 @@
 const Routes = [
-  { text: "Projects", to: "/projects" },
+  { text: "Home", to: "/" },
   { text: "About", to: "/about" },
+  { text: "Projects", to: "/projects" },
   { text: "Contact", to: "/contact" },
-  { text: "Experience", to: "/experience" },
 ]
 
 export default Routes

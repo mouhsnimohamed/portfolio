@@ -51,6 +51,11 @@ export const LayoutContainer = styled.div`
     transform: rotate(20deg);
   }
 `
+
+export const Highlighted = styled.code`
+  color: ${({ theme }) => theme.colors.primary};
+`
+
 export const GrayTitle = styled.h3`
   color: ${({ theme }) => theme.colors.gray};
   text-align: ${({ align }) => align || "left"};

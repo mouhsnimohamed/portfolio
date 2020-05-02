@@ -26,8 +26,8 @@ export const MailMe = styled.a`
 export const Copyright = styled.p`
   [class^="icon-"] {
     color: red;
-    margin-left: 10px;
-    font-size: 22px;
+    margin: 0 5px;
+    font-size: 21px;
   }
 
   a {
