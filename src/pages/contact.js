@@ -27,7 +27,7 @@ const ContactPage = () => {
             Website: <Highlighted> mouhsni.com</Highlighted>
           </p>
         </div>
-        <form name="contact" netlify>
+        <form name="contact" netlify data-netlify="true">
           <GrayTitle>Send a message!</GrayTitle>
           <InputWrapper>
             <p>
