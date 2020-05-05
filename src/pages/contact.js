@@ -27,7 +27,13 @@ const ContactPage = () => {
             Website: <Highlighted> mouhsni.com</Highlighted>
           </p>
         </div>
-        <form name="contact" action="/" method="POST" data-netlify="true">
+        <form
+          name="contact"
+          action="/"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
           <GrayTitle>Send a message!</GrayTitle>
           <InputWrapper>
             <p>
