@@ -1,7 +1,7 @@
 const breakpoints = {
-  tablet: `@media (min-width: 600px)`,
-  tablet768: `@media (min-width: 768px)`,
-  desktop: `@media (min-width: 1025px)`,
-};
+  phone: `@media (max-width: 600px)`,
+  tablet: `@media (max-width: 768px)`,
+  desktop: `@media (min-width: 769px)`,
+}
 
-export default breakpoints;
+export default breakpoints

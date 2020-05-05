@@ -20,16 +20,16 @@ const Header = () => {
               Mm
             </Logo>
           </h1>
-          <LinkList>
+          <LinkList open={open}>
             {Routes.map(item => (
               <NavLink key={item.to} text={item.text} to={item.to} />
             ))}
           </LinkList>
-          {/* <StyledBurger open={open} onClick={() => setOpen(!open)}>
+          <StyledBurger open={open} onClick={() => setOpen(!open)}>
             <div />
             <div />
             <div />
-          </StyledBurger> */}
+          </StyledBurger>
         </HeaderWrapper>
       </MainContainer>
     </HeaderContainer>

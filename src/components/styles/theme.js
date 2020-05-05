@@ -1,5 +1,6 @@
 import React from "react"
 import styled, { ThemeProvider } from "styled-components"
+import breakpoints from "../../shared/breakpoints"
 const colors = {
   white: "#ffffff",
   gray: "rgba(255, 255, 255, 0.6)",
@@ -11,6 +12,7 @@ const colors = {
 
 const theme = {
   colors,
+  breakpoints: breakpoints,
 }
 
 export const MainContainer = styled.main`

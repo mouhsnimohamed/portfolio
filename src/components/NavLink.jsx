@@ -36,7 +36,6 @@ const CustomLink = styled(Link)`
 `
 
 const Wrapper = styled.li`
-  position: relative;
   margin-left: 3rem;
   margin-bottom: 0;
   display: flex;
@@ -44,5 +43,9 @@ const Wrapper = styled.li`
 
   .active {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    margin: 10px 0;
   }
 `

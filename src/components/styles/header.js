@@ -16,6 +16,20 @@ export const LinkList = styled.ul`
   display: flex;
   margin: 0;
   align-self: center;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    display: ${({ open }) => (open ? "flex" : "none")};
+    background: ${({ theme }) => theme.colors.dark};
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    padding-top: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: stretch;
+  }
 `
 export const Logo = styled(Link)`
   line-height: 23px;
@@ -31,7 +45,7 @@ export const Logo = styled(Link)`
 export const StyledBurger = styled.button`
   transform: rotate(180deg);
   position: absolute;
-  top: 5%;
+  top: 8%;
   right: 2rem;
   display: flex;
   flex-direction: column;
@@ -70,5 +84,13 @@ export const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
     }
+  }
+
+  ${({ theme }) => theme.breakpoints.desktop} {
+    display: none;
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    display: flex;
   }
 `
