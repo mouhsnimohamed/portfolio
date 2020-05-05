@@ -27,7 +27,7 @@ const ContactPage = () => {
             Website: <Highlighted> mouhsni.com</Highlighted>
           </p>
         </div>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" action="/" method="POST" data-netlify="true">
           <GrayTitle>Send a message!</GrayTitle>
           <InputWrapper>
             <p>
@@ -64,14 +64,14 @@ const Button = styled.button`
   padding: 10px 40px;
   cursor: pointer;
 `
-const Textarea = styled.input`
+const Textarea = styled.textarea`
   width: 100%;
   border: 1px solid ${({ theme }) => theme.colors.transparent};
   background: ${({ theme }) => theme.colors.dark};
   height: 150px;
   font-size: 16px;
   color: ${({ theme }) => theme.colors.gray};
-  padding: 0 10px;
+  padding: 10px 20px;
 `
 const Input = styled.input`
   width: 100%;
