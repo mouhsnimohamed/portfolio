@@ -1,5 +1,7 @@
 ---
 date: "2019-08-04"
+primary: true
+order: 0
 featuredImage: ../../images/credit-entreprise.png
 name: "Credit-entreprise"
 title: "Business credit for BANK OF AFRICA"

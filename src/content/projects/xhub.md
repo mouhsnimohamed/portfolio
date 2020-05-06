@@ -1,5 +1,7 @@
 ---
 date: "2019-08-04"
+primary: true
+order: 3
 featuredImage: ../../images/x-hub-io.jpg
 name: "xhub"
 title: "x-hub.io website"

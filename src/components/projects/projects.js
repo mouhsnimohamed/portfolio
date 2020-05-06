@@ -11,8 +11,11 @@ const Projects = ({ limit = 100 }) => {
   } = useStaticQuery(graphql`
     query ProjectsQuery {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { fileAbsolutePath: { regex: "/projects/" } }
+        sort: { fields: frontmatter___order }
+        filter: {
+          fileAbsolutePath: { regex: "/projects/" }
+          frontmatter: { primary: { eq: true } }
+        }
         limit: 100
       ) {
         edges {
