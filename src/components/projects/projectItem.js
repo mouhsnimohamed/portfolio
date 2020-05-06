@@ -28,11 +28,18 @@ const Item = styled.div`
   display: flex;
   align-items: center;
   flex-direction: ${props => (props.isOdd ? "row-reverse" : "row")};
+  ${({ theme }) => theme.breakpoints.phone} {
+    flex-wrap: wrap;
+    margin: 5em 0;
+  }
 `
-
 const Text = styled.div`
   width: 55%;
   padding: 5%;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+    padding: 0;
+  }
 `
 const Title = styled.h2`
   color: white;
@@ -44,4 +51,8 @@ const Title = styled.h2`
 const Image = styled.div`
   width: 45%;
   padding: 0 2%;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+    padding: 0 3% 25px;
+  }
 `

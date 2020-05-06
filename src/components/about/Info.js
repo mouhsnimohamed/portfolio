@@ -78,4 +78,9 @@ const AboutLabel = styled.h1`
     top: -70px;
     left: -15px;
   }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    top: -20px;
+    font-size: 100px;
+  }
 `

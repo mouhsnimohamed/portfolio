@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
   text-align: center;
   font-size: 16px;
   background: ${({ theme }) => theme.colors.dark};
-  padding: 6em 0;
+  padding: 6em 2em;
 `
 
 export const GetInTouch = styled.h2`

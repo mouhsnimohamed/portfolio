@@ -16,7 +16,10 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              MERN Stack developer <span> - Self-employment</span>
+              MERN Stack developer{" "}
+              <span>
+                <code> - </code>Self-employed
+              </span>
             </h4>
             <Location>
               I worked for so many clients as a freelancer,
@@ -31,7 +34,9 @@ const Experience = () => {
               <Desc>
                 <h4>
                   Expert Front End developer
-                  <span> - EURAFRIC Information</span>
+                  <span>
+                    <code> - </code>EURAFRIC Information
+                  </span>
                 </h4>
                 <Location>
                   Develop a highly interactive web application for business
@@ -49,7 +54,9 @@ const Experience = () => {
               <Desc>
                 <h4>
                   MERN Stack developer
-                  <span> - x-hub.io</span>
+                  <span>
+                    <code> - </code>x-hub.io
+                  </span>
                 </h4>
                 <Location>
                   Within the company xhub, I had the chance to work with the
@@ -108,7 +115,10 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              Front end Developer <span> - Gentis Recruitment</span>
+              Front end Developer{" "}
+              <span>
+                <code> - </code>Gentis Recruitment
+              </span>
             </h4>
             <Location>
               Collaborated with a team of 10 members including designers
@@ -137,7 +147,10 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              Front end Developer <span> - Agence Oneo</span>
+              Front end Developer{" "}
+              <span>
+                <code> - </code>Agence Oneo
+              </span>
             </h4>
             <Location>
               Worked closely with designers and management team to develop and
@@ -159,7 +172,10 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              Front end Designer <span> - VOID</span>
+              Front end Designer{" "}
+              <span>
+                <code> - </code>VOID
+              </span>
             </h4>
             <Location>
               Developed and maintained code for in-house and client websites
@@ -189,6 +205,11 @@ const ExperienceWrapper = styled.div`
   width: 85%;
   margin: 0 auto;
   padding: 4em 0;
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+    padding-bottom: 0;
+  }
 `
 const ExperienceLine = styled.div`
   padding: 1.2rem 0;
@@ -202,6 +223,10 @@ const ExperienceLine = styled.div`
 
   &:last-child {
     border-bottom: 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    flex-wrapper: wrap;
   }
 `
 const Desc = styled.div`
@@ -219,6 +244,22 @@ const Desc = styled.div`
     font-size: 0.9em;
     color: ${({ theme }) => theme.colors.text};
   }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    width: 100%;
+    padding: 0;
+    order: 1;
+    code {
+      display: none;
+    }
+    span {
+      display: block;
+    }
+
+    h4 {
+      margin-bottom: 30px;
+    }
+  }
 `
 const Location = styled.p`
   line-height: 150%;
@@ -232,10 +273,20 @@ const Location = styled.p`
 const Year = styled.div`
   width: 30%;
   text-align: right;
+  p {
+    margin: 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+    order: 0;
+    text-align: left;
+  }
 `
 
 const Child = styled.div`
   padding-left: 25px;
+  order: 2;
   h4 {
     font-size: 110%;
   }

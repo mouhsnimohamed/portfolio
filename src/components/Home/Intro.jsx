@@ -21,7 +21,6 @@ const Intro = () => (
 export default Intro
 
 const IntroContainer = styled.div`
-  margin-bottom: 8em;
   display: flex;
   justify-content: center;
   align-items: center;

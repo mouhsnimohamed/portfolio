@@ -13,11 +13,12 @@ const AboutMe = () => (
 export default AboutMe
 
 const AboutContainer = styled.div`
-  margin-top: 150px;
+  margin-top: 8em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   ${({ theme }) => theme.breakpoints.tablet} {
     flex-wrap: wrap;
+    margin-top: 3em;
   }
 `

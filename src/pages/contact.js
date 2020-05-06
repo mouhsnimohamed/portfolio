@@ -101,11 +101,36 @@ const ContactContainer = styled.div`
   form {
     width: 48%;
   }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    margin: 40px 0 0;
+  }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    flex-wrap: wrap;
+    > div {
+      width: 100%;
+      margin: 0 0 40px;
+      br:last-child {
+        display: none;
+      }
+    }
+    form {
+      width: 100%;
+    }
+  }
 `
 const InputWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   > p {
     width: 47%;
+  }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    flex-wrap: wrap;
+    > p {
+      width: 100%;
+    }
   }
 `

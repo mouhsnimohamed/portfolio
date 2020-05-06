@@ -62,4 +62,7 @@ export default Projects
 
 const ProjectsWrapper = styled.div`
   padding: 8em 0;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    padding: 6em 0 0;
+  }
 `
