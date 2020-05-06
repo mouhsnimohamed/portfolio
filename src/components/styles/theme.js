@@ -17,6 +17,7 @@ const theme = {
 
 export const MainContainer = styled.main`
   width: 100%;
+  overflow: hidden;
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
@@ -24,6 +25,8 @@ export const MainContainer = styled.main`
 export const LayoutContainer = styled.div`
   background: ${({ theme }) => theme.colors.dark};
   font-family: "Poppins", Arial, sans-serif;
+  overflow: hidden;
+  width: 100vw;
   font-size: 18px;
   line-height: 1.8;
   font-weight: 400;
