@@ -35,6 +35,9 @@ export default Info
 const AboutDescription = styled.div`
   position: relative;
   width: 55%;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+  }
 `
 
 const Name = styled.h2`
@@ -71,4 +74,8 @@ const AboutLabel = styled.h1`
   font-weight: 700 !important;
   color: rgba(255, 255, 255, 0.08);
   text-transform: uppercase;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    top: -70px;
+    left: -15px;
+  }
 `

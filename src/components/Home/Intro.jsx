@@ -28,4 +28,7 @@ const IntroContainer = styled.div`
   min-height: 550px;
   height: calc(100vh - 200px);
   text-align: center;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    min-height: auto;
+  }
 `

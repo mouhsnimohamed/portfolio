@@ -175,7 +175,7 @@ const Experience = () => {
             </Location>
           </Desc>
           <Year>
-            <p>Fev 2011 - Mar 2013</p>
+            <p>Fev 2013 - Mar 2014</p>
           </Year>
         </ExperienceLine>
       </div>

@@ -13,6 +13,11 @@ export default MyAvatar
 const AvatarContainer = styled.div`
   width: 36%;
   position: relative;
+  z-index: 0;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    margin: 0 auto 60px;
+    width: 50%;
+  }
   &:hover:before {
     left: -10px;
     top: 10px;
@@ -35,9 +40,15 @@ const AvatarContainer = styled.div`
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     top: 20px;
     left: -20px;
-
     border-width: 2px;
     border-style: solid;
     border-color: ${({ theme }) => theme.colors.primary};
+
+    ${({ theme }) => theme.breakpoints.tablet} {
+      top: -10px !important;
+      left: -10px !important;
+      width: calc(100% + 20px);
+      height: calc(100% + 20px);
+    }
   }
 `
