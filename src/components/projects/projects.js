@@ -5,17 +5,14 @@ import { FramerAnimator, variants2 } from "../../shared/Animations"
 import { GrayTitle, LightTitle } from "../styles/theme"
 import ProjectItem from "./projectItem"
 
-const Projects = ({ limit = 100 }) => {
-  const {
+const Projects = ({ primary = false }) => {
+  let {
     allMarkdownRemark: { edges },
   } = useStaticQuery(graphql`
     query ProjectsQuery {
       allMarkdownRemark(
         sort: { fields: frontmatter___order }
-        filter: {
-          fileAbsolutePath: { regex: "/projects/" }
-          frontmatter: { primary: { eq: true } }
-        }
+        filter: { fileAbsolutePath: { regex: "/projects/" } }
         limit: 100
       ) {
         edges {
@@ -25,6 +22,7 @@ const Projects = ({ limit = 100 }) => {
               name
               title
               description
+              primary
               featuredImage {
                 childImageSharp {
                   fluid(maxWidth: 1300) {
@@ -38,6 +36,10 @@ const Projects = ({ limit = 100 }) => {
       }
     }
   `)
+
+  if (primary) {
+    edges = edges.filter(project => project.node.frontmatter.primary)
+  }
 
   return (
     <ProjectsWrapper>

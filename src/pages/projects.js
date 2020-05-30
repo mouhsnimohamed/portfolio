@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <Layout>
       <SEO title="portfolio" />
-      <Projects />
+      <Projects primary={false} />
     </Layout>
   )
 }

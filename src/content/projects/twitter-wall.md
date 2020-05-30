@@ -1,7 +1,7 @@
 ---
 date: "2019-08-04"
 primary: true
-order: 2
+order: 4
 featuredImage: ../../images/twitter-wall-2.jpg
 name: "twitter-wall"
 title: "Twitter Wall platform"
