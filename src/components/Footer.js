@@ -12,8 +12,8 @@ export default function Footer() {
         Copyright &copy;{new Date().getFullYear()} All rights reserved | made
         with <i className="icon-heart" aria-hidden="true"></i> by Mohamed
         MOUHSNI
-        <br />
-        Inspired by <a href="https://colorlib.com/">Colorlib</a>
+        {/* <br />
+        Inspired by <a href="https://colorlib.com/">Colorlib</a> */}
       </Copyright>
     </FooterContainer>
   )
