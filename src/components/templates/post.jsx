@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../layout"
+import styled from "styled-components"
 
 export default function Template({ data }) {
   const { markdownRemark } = data
@@ -9,16 +10,12 @@ export default function Template({ data }) {
 
   return (
     <Layout>
-      <div className="max-w-2xl mx-auto">
-        <h1 className="font-bold mb-8 text-4xl">{frontmatter.title}</h1>
-        <h2 className="font-semibold mb-8 text-base">
-          Published on {frontmatter.date}
-        </h2>
-        <div
-          className="text-xl font-serif leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+      <PostHolder>
+        <h1>{frontmatter.title}</h1>
+        <Date>Published on {frontmatter.date}</Date>
+        <Description>{frontmatter.description}</Description>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </PostHolder>
     </Layout>
   )
 }
@@ -30,7 +27,44 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        description
       }
     }
   }
+`
+
+const PostHolder = styled.div`
+  width: 80%;
+  margin: 80px auto;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: white;
+  }
+
+  img {
+    margin: 0 auto 30px !important;
+    display: block;
+    max-width: 100%;
+  }
+  a {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+`
+
+const Date = styled.div`
+  font-size: 15px;
+  margin: 5px 0 15px 0;
+  line-height: 130%;
+  color: ${({ theme }) => theme.colors.text};
+`
+
+const Description = styled.p`
+  margin: 50px 0;
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 1.25em;
+  font-weight: 600;
 `

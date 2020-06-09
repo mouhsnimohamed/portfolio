@@ -46,7 +46,6 @@ const BlogPage = () => {
             <Title>
               <Link to={frontmatter.path}>{frontmatter.title}</Link>
             </Title>
-            {/* <p>{frontmatter.description}</p> */}
           </Post>
         ))}
       </PostsContainer>
@@ -63,6 +62,7 @@ const PostsContainer = styled.div`
 
 const Post = styled.div`
   width: 31%;
+  margin-bottom: 20px;
 `
 
 const Thumbnail = styled.img`
@@ -71,9 +71,9 @@ const Thumbnail = styled.img`
 `
 
 const Title = styled.h2`
-  font-size: 20px;
+  font-size: 22px;
   line-height: 130%;
-  margin: 0 0 16px 15px;
+  margin: 0 0 0 15px;
   font-weight: 500;
   a {
     text-decoration: none;
@@ -82,7 +82,7 @@ const Title = styled.h2`
 `
 const Date = styled.div`
   font-size: 15px;
-  margin: 13px 0 13px 15px;
+  margin: 15px 0 15px 15px;
   line-height: 130%;
   color: ${({ theme }) => theme.colors.text};
 `
