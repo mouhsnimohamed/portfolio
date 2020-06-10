@@ -52,6 +52,33 @@ const PostHolder = styled.div`
   a {
     color: ${({ theme }) => theme.colors.primary};
   }
+
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 100%;
+  }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      line-height: 120%;
+      margin: 1rem 0;
+    }
+    h1 {
+      font-size: 1.6rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+  }
 `
 
 const Date = styled.div`
@@ -67,4 +94,9 @@ const Description = styled.p`
   text-align: justify;
   line-height: 1.25em;
   font-weight: 600;
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    text-align: left;
+    font-size: 1.3rem;
+  }
 `

@@ -63,6 +63,13 @@ const PostsContainer = styled.div`
 const Post = styled.div`
   width: 31%;
   margin-bottom: 20px;
+  ${({ theme }) => theme.breakpoints.tablet} {
+    width: 49%;
+  }
+
+  ${({ theme }) => theme.breakpoints.phone} {
+    width: 100%;
+  }
 `
 
 const Thumbnail = styled.img`
