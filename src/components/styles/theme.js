@@ -20,6 +20,8 @@ export const MainContainer = styled.main`
   max-width: 1140px;
   padding: 0 15px;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 
   ${({ theme }) => theme.breakpoints.tablet} {
     padding: 0 25px;

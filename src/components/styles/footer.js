@@ -2,8 +2,10 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.footer`
   text-align: center;
+  z-index: 1;
+  position: relative;
   font-size: 16px;
-  background: ${({ theme }) => theme.colors.dark};
+  // background: ${({ theme }) => theme.colors.dark};
   padding: 6em 2em;
 `
 
