@@ -24,7 +24,7 @@ const ContactPage = () => {
             <br />
             Email: <Highlighted> m.mousni@gmail.com</Highlighted>
             <br />
-            Website: <Highlighted> mouhsni.com</Highlighted>
+            Website: <Highlighted> www.mouhsni.com</Highlighted>
           </p>
         </div>
         <form
