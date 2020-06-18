@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mohamed Mouhsni`,
-    description: `Mohamed Mouhsni mouhsni@netlify.com`,
+    description: `Mohamed Mouhsni www.mouhsni.com`,
     author: `Mohamed Mouhsni`,
   },
   plugins: [
