@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Mohamed Mouhsni`,
-    description: `Mohamed Mouhsni www.mouhsni.com`,
+    description: `Mohamed Mouhsni A self-taught WEB Developer and a CSS Designer, based in Agadir, Morocco. || www.mouhsni.com`,
     author: `Mohamed Mouhsni`,
   },
   plugins: [

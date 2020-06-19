@@ -8,7 +8,7 @@ import Projects from "../components/projects/projects"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO />
       <Intro />
       <AboutMe />
       <Projects primary={true} />

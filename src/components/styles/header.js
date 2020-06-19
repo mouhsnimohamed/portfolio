@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export const HeaderContainer = styled.header`
   padding: 0 0 2em;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 `
 
