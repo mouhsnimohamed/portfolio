@@ -2,12 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
 
-const ProjectItem = ({ title, description, image, isOdd }) => {
+const ProjectItem = ({ title, description, image, isOdd, link }) => {
   const formattedDescription = description
     .split(`\n\n`)
     .map(paragraph => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`)
     .join(``)
 
+  console.log(title, link)
   return (
     <Item isOdd={isOdd}>
       <Image>
@@ -16,6 +17,11 @@ const ProjectItem = ({ title, description, image, isOdd }) => {
       <Text>
         <Title>{title}</Title>
         <div dangerouslySetInnerHTML={{ __html: formattedDescription }} />
+        {link && (
+          <Link target="_blank" rel="noopener noreferrer" href={link}>
+            {link}
+          </Link>
+        )}
       </Text>
     </Item>
   )
@@ -55,4 +61,8 @@ const Image = styled.div`
     width: 100%;
     padding: 0 3% 25px;
   }
+`
+
+const Link = styled.a`
+  color: ${({ theme }) => theme.colors.primary};
 `

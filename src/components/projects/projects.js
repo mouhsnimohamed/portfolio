@@ -21,6 +21,7 @@ const Projects = ({ primary = false }) => {
               date(formatString: "MMMM DD, YYYY")
               name
               title
+              link
               description
               primary
               featuredImage {
@@ -57,6 +58,7 @@ const Projects = ({ primary = false }) => {
           title={frontmatter.title}
           description={frontmatter.description}
           image={frontmatter.featuredImage}
+          link={frontmatter.link ?? ""}
         />
       ))}
     </ProjectsWrapper>

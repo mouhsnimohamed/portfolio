@@ -1,7 +1,7 @@
 ---
 date: "2018-08-04"
 primary: false
-order: 3
+order: 5
 featuredImage: ../../images/ag2rlamodiale.png
 name: "ag2rlamondiale"
 title: "A Desktop application for AG2R LA MONDIALE"
