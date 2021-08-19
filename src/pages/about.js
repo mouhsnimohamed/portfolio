@@ -1,18 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Intro from "../components/Home/Intro"
 import AboutMe from "../components/about/about"
-import Projects from "../components/projects/projects"
+import Experience from "../components/about/Experience"
 
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
-      <SEO />
-      <Intro />
+      <SEO title="about" />
       <AboutMe />
-      <Projects primary={true} />
+      <Experience />
     </Layout>
   )
 }
-export default IndexPage
+export default AboutPage
