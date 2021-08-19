@@ -16,7 +16,7 @@ const Experience = () => {
         <ExperienceLine>
           <Desc>
             <h4>
-              MERN Stack developer{" "}
+              Full Stack developer{" "}
               <span>
                 <code> - </code>Self-employed
               </span>
@@ -29,6 +29,25 @@ const Experience = () => {
           <Year>
             <p>2018 - Present</p>
           </Year>
+          <Child>
+            <ExperienceLine>
+              <Desc>
+                <h4>
+                  Tech Lead
+                  <span>
+                    <code> - </code>EURAFRIC Information
+                  </span>
+                </h4>
+                <Location>
+                  Develop a highly interactive Mobile and Web application for
+                  BMCE Euroservices | BANK OF AFRIC using React Native framwork
+                </Location>
+              </Desc>
+              <Year>
+                <p>Aug 2020 - Present</p>
+              </Year>
+            </ExperienceLine>
+          </Child>
           <Child>
             <ExperienceLine>
               <Desc>

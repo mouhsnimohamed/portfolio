@@ -7,17 +7,18 @@ const Info = () => (
     <AboutLabel>About</AboutLabel>
     <Name>Hi! I'm Mohamed Mouhsni</Name>
     <Description>
-      A self-taught WEB Developer and a CSS Designer, based in Agadir, Morocco.
+      A self-taught WEB Developer, based in Casablanca, Morocco.
       <br />
       <br />
       Outside of work I like to work on full stack web applications with a
-      combination of React, Gatsby, NodeJS and backend services like Firebase
-      and Netlify. This allows me play around with new technology and gives me a
-      better understanding of the digital industry as a whole.
+      combination of React(React Native), Gatsby, NodeJS, Laravel and backend
+      services like Firebase and Netlify. This allows me play around with new
+      technology and gives me a better understanding of the digital industry as
+      a whole.
       <br />
       <br />
-      Ready to start working on your JAVASCRIPT and CSS jobs, If that sounds
-      like someone you’d like to collaborate with.
+      Ready to start working on your Web or Mobile projects, If that sounds like
+      someone you’d like to collaborate with.
     </Description>
     <SocialMedia color="primary" justifyContent="flex-start" />
     <ContactMe>Contact me here!</ContactMe>
