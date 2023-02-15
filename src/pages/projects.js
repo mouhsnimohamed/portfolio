@@ -6,7 +6,7 @@ import Projects from "../components/projects/projects"
 const AboutPage = () => {
   return (
     <Layout>
-      <SEO title="portfolio" />
+      <SEO title="projects I've worked on" />
       <Projects primary={false} />
     </Layout>
   )

@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Mohamed Mouhsni`,
-    description: `Mohamed Mouhsni A self-taught WEB Developer and a CSS Designer, based in Agadir, Morocco. || www.mouhsni.com`,
+    description: `Mohamed Mouhsni A self-taught WEB Developer, based in Casablanca, Morocco. || www.mouhsni.com`,
     author: `Mohamed Mouhsni`,
+    keywords:
+      "web developer, frontend developer, react developer, nodejs developer",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

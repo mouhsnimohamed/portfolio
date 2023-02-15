@@ -8,7 +8,6 @@ const ProjectItem = ({ title, description, image, isOdd, link }) => {
     .map(paragraph => `<p>${paragraph.replace(/\n/g, `<br>`)}</p>`)
     .join(``)
 
-  console.log(title, link)
   return (
     <Item isOdd={isOdd}>
       <Image>
