@@ -11,7 +11,7 @@ const Info = () => (
       <br />
       <br />
       Outside of work I like to work on full stack web applications with a
-      combination of React(React Native), Gatsby, NodeJS, Laravel and backend
+      combination of React(React Native), Gatsby, NodeJS, Laravel and real-time
       services like Firebase and Netlify. This allows me play around with new
       technology and gives me a better understanding of the digital industry as
       a whole.
