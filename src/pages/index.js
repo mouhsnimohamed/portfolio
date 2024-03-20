@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Intro from "../components/Home/Intro"
 import AboutMe from "../components/about/about"
 import Projects from "../components/projects/projects"
@@ -8,7 +8,7 @@ import Projects from "../components/projects/projects"
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO />
+      <Seo />
       <Intro />
       <AboutMe />
       <Projects primary={true} />

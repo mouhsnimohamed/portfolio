@@ -8,7 +8,7 @@
     "@mdx-js/mdx": "3.0.1",
     "@mdx-js/react": "3.0.1",
     "babel-plugin-styled-components": "2.1.4",
-    "framer-motion": "11.0.15",
+    "framer-motion": "11.0.18",
     "gatsby": "5.13.3",
     "gatsby-image": "3.11.0",
     "gatsby-plugin-manifest": "5.13.1",

@@ -4,7 +4,7 @@ module.exports = {
     description: `Mohamed Mouhsni A self-taught WEB Developer, based in Casablanca, Morocco. || www.mouhsni.com`,
     author: `Mohamed Mouhsni`,
     keywords:
-      "web developer, frontend developer, react developer, nodejs developer",
+      "web developer, frontend developer, react/native developer, nodejs developer",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

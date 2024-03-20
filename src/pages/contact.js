@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { LightTitle, GrayTitle, Highlighted } from "../components/styles/theme"
 
 const ContactPage = () => {
   return (
     <Layout>
-      <SEO title="contact me" />
+      <Seo title="contact me" />
       <LightTitle>Contact me</LightTitle>
       <ContactContainer>
         <div>

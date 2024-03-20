@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../../components/layout"
-import SEO from "../../components/seo"
+import Seo from "../../components/seo"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 
@@ -33,7 +33,7 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <SEO title="blog" />
+      <Seo title="blog" />
       <PostsContainer>
         {edges.map(({ node: { frontmatter, id } }) => (
           <Post key={id}>
