@@ -11,7 +11,7 @@ const Projects = ({ primary = false }) => {
   } = useStaticQuery(graphql`
     query ProjectsQuery {
       allMarkdownRemark(
-        sort: { fields: frontmatter___order }
+        sort: { frontmatter: { order: ASC } }
         filter: { fileAbsolutePath: { regex: "/projects/" } }
         limit: 100
       ) {
@@ -39,7 +39,7 @@ const Projects = ({ primary = false }) => {
   `)
 
   if (primary) {
-    edges = edges.filter(project => project.node.frontmatter.primary)
+    edges = edges.filter((project) => project.node.frontmatter.primary)
   }
 
   return (
