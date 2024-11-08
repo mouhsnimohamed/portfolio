@@ -5,7 +5,7 @@ import Layout from "../layout"
 import styled from "styled-components"
 
 export default function Template({ data }) {
-  const { markdownRemark } = data
+  const { markdownRemark = {} } = data
   const { frontmatter, html } = markdownRemark
 
   return (
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
 `
 
 const PostHolder = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 80px auto;
   h1,
   h2,
@@ -51,6 +51,55 @@ const PostHolder = styled.div`
   }
   a {
     color: ${({ theme }) => theme.colors.primary};
+  }
+  ol {
+    margin-left: 2rem;
+    ::marker {
+      color: ${({ theme }) => theme.colors.primary};
+    }
+  }
+
+  .cl {
+    color: #f2ca27;
+  }
+  mark {
+    background-color: #f2ca27;
+    padding: 0 5px;
+    &.gr {
+      background-color: #7ed07e;
+    }
+  }
+
+  pre {
+    background-color: transparent;
+    border-radius: 0.375rem;
+    color: #383a42;
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 1.7142857;
+    margin: 1.5rem 0;
+    width: 75%;
+    overflow-x: auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    code {
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  blockquote {
+    background-color: #eef9fd;
+    border: 0 solid #4cb3d4;
+    border-left-width: 15px;
+    box-shadow: var(--ifm-alert-shadow);
+    padding: 15px;
+    border-radius: 3px;
+    margin: 0 0 1rem;
+    p {
+      color: rgb(25, 60, 71);
+      font-size: 16px;
+    }
   }
 
   ${({ theme }) => theme.breakpoints.tablet} {
