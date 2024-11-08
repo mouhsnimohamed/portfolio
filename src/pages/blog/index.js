@@ -57,7 +57,7 @@ export default BlogPage
 const PostsContainer = styled.div`
   padding: 50px 0;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
 `
 
 const Post = styled.div`

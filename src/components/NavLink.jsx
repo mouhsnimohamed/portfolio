@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const NavLink = ({ text, to }) => {
+const NavLink = ({ text, to = "/" }) => {
   return (
     <Wrapper>
       <CustomLink to={to} activeClassName="active">
@@ -18,9 +18,7 @@ NavLink.propTypes = {
   to: PropTypes.string,
 }
 
-NavLink.defaultProps = {
-  to: `/`,
-}
+
 
 export default NavLink
 
