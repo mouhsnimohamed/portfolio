@@ -82,6 +82,10 @@ const PostHolder = styled.div`
     overflow-x: auto;
     padding: 1rem;
     background-color: #f9f9f9;
+    ${({ theme }) => theme.breakpoints.tablet} {
+      width: 100%;
+    }
+
     code {
       display: block;
       line-height: 1;
@@ -99,6 +103,13 @@ const PostHolder = styled.div`
     p {
       color: rgb(25, 60, 71);
       font-size: 16px;
+    }
+
+    ${({ theme }) => theme.breakpoints.tablet} {
+      padding: 10px;
+      p {
+        font-size: 13px;
+      }
     }
   }
 
