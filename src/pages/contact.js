@@ -7,7 +7,9 @@ import { LightTitle, GrayTitle, Highlighted } from "../components/styles/theme"
 const ContactPage = () => {
   return (
     <Layout>
-      <Seo title="contact me" />
+      <Seo title="contact me">
+        <link rel="canonical" href="https://www.mouhsni.com/contact/" />
+      </Seo>
       <LightTitle>Contact me</LightTitle>
       <ContactContainer>
         <div>

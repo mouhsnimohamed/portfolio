@@ -7,7 +7,9 @@ import Experience from "../components/about/Experience"
 const AboutPage = () => {
   return (
     <Layout>
-      <Seo title="about me" />
+      <Seo title="about me">
+        <link rel="canonical" href="https://www.mouhsni.com/about/" />
+      </Seo>
       <AboutMe />
       <Experience />
     </Layout>

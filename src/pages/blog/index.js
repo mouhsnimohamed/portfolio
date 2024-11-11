@@ -33,7 +33,9 @@ const BlogPage = () => {
 
   return (
     <Layout>
-      <Seo title="blog" />
+      <Seo title="blog">
+        <link rel="canonical" href="https://www.mouhsni.com/blog/" />
+      </Seo>
       <PostsContainer>
         {edges.map(({ node: { frontmatter, id } }) => (
           <Post key={id}>

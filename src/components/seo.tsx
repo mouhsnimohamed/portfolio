@@ -10,21 +10,32 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ title, lang= "en", meta= [], description= "" }) {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            keywords
-          }
+type Props = {
+  children?: React.ReactNode
+  title: string
+  lang?: string
+  description?: string
+}
+
+function SEO({
+  title,
+  lang = "en",
+  meta = [],
+  description = "",
+  children,
+}: Props) {
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author
+          keywords
         }
       }
-    `
-  )
+    }
+  `)
 
   const metaDescription = description || site.siteMetadata.description
   const metaTitle = title || site.siteMetadata.title
@@ -92,16 +103,17 @@ function SEO({ title, lang= "en", meta= [], description= "" }) {
           'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer','GTM-5V24LTT');`}
       </script>
+      {children && children}
     </Helmet>
   )
 }
 
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string,
-}
+// SEO.propTypes = {
+//   description: PropTypes.string,
+//   lang: PropTypes.string,
+//   meta: PropTypes.arrayOf(PropTypes.object),
+//   title: PropTypes.string,
+//   children: PropTypes.string,
+// }
 
 export default SEO
