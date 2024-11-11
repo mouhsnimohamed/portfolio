@@ -85,7 +85,7 @@ const Thumbnail = styled.img`
   width: 100%;
   display: block;
   ${({ theme }) => theme.breakpoints.tablet} {
-    width: 50%;
+    width: 90%;
   }
 `
 
