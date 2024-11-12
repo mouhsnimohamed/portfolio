@@ -44,6 +44,16 @@ const PostHolder = styled.div`
     color: white;
   }
 
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+
   img {
     margin: 0 auto 30px !important;
     display: block;
@@ -127,16 +137,16 @@ const PostHolder = styled.div`
       margin: 1rem 0;
     }
     h1 {
-      font-size: 1.6rem;
+      font-size: 1.7rem;
     }
     h2 {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
     }
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
     h4 {
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
   }
 `

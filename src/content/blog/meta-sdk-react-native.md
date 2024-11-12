@@ -11,7 +11,7 @@ Here’s a guide on setting up the SDK in your React Native for both Andriod And
 
 ![meta and react native](https://i.imgur.com/hfOHSvg.png)
 
-# Step 1: Install the Facebook SDK for React Native
+## Step 1: Install the Facebook SDK for React Native
 
 ### 1. Install the react-native-fbsdk-next package:
 
@@ -39,18 +39,18 @@ cd ios/ && pod install
 
 ```
 
-# Step 2: Set Up the Facebook App and Get App ID and Client token
+## Step 2: Set Up the Facebook App and Get App ID and Client token
 
 1. Go to the [Facebook for Developers site](https://developers.facebook.com/).
 2. Create a new app if you don’t have one already.
 3. Copy the App ID from your Facebook app settings. You’ll need this for configuration.
 4. Copy the client token as well. You’ll find the it under App ID and App Secret.
 
-# Step 3: Configuration
+## Step 3: Configuration
 
 Let's start by going through the steps for Android setup first.
 
-## Andriod
+### Andriod
 
 1. Open the <mark>android/app/build.gradle</mark> file and add this line in the dependencies section.
 
@@ -91,7 +91,7 @@ resources {
 
 🎉 that's it 🎉 save all files and build your project. Let's move on to IOS.
 
-## IOS
+### IOS
 
 1. Configure the <mark>Info.plist</mark> file with an XML snippet that contains data about your app. Add these lines to the file and make sur to replace <mark>fbAPP-ID</mark> and <mark>CLIENT-TOKEN</mark> by yours yoy have copied from your facebook APP (see step 2).
 
@@ -231,7 +231,7 @@ if (trackingStatus === "authorized" || trackingStatus === "unavailable") {
 
 > Requires iOS 14. On Android and iOS versions below 14, this will always return 'unavailable'.
 
-# Let's have a look at the result
+## Let's have a look at the result
 
 You'll start seeing events in the Events Manager of your Facebook app like the image below:
 
